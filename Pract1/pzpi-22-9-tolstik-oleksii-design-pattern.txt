@@ -77,7 +77,8 @@
 10:21 Список використаних джерел. Перелік літератури та матеріалів, що були використані під час підготовки доповіді.
 
 Посилання на файл з кодом в GitHub репозиторії: 
-https://github.com/NureTolstikOleksii/arkpz-pzpi-22-9-tolstik-oleksii/tree/main/Pract1/arkpz-pzpi-22-9-tolstik-oleksii-pract1
+https://github.com/NureTolstikOleksii/apz-pzpi-22-9-tolstik-oleksii/blob/main/Pract1/pzpi-22-9-tolstik-oleksii-design-pattern
+
 ДОДАТОК Б
 Cлайди презентації доповіді
 
