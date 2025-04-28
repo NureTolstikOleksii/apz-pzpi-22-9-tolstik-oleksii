@@ -1,1 +1,41 @@
+Приклад GraphQL-запиту:
+1  query {
+2    user(id: "123") {
+3      name
+4      profilePicture {
+5        url
+6      }
+7      friends {
+8        name
+9      }
+10    }
+11  }
 
+Приклад події у Kafka:
+1  {
+2    "event": "NewPostCreated",
+3    "timestamp": "2024-06-25T12:34:56Z",
+4    "data": {
+5      "postId": "abc123",
+6      "authorId": "user456",
+7      "content": "Hello, world!"
+8    }
+9  }
+
+Приклад кешування через Memcached:
+1  import memcache
+2  
+3  # Підключення до Memcached сервера
+4  mc = memcache.Client(['127.0.0.1:11211'])
+5  
+6  # Запис даних у кеш
+7  mc.set('user_123_profile', {'name': 'John', 'age': 30})
+8  
+9  # Отримання даних із кешу
+10  profile = mc.get('user_123_profile')
+11  print(profile)
+
+Приклад шардінгу базі даних:
+1  User IDs 0-9999  -> Shard 1 (Server 1)
+2  User IDs 10000-19999 -> Shard 2 (Server 2)
+3  User IDs 20000-29999 -> Shard 3 (Server 3)
