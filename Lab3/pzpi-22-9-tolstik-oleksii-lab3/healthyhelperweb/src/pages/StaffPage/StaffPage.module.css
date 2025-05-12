@@ -1,0 +1,273 @@
+.container {
+    padding: 24px;
+}
+
+.content {
+    display: flex;
+    margin-top: 20px;
+    gap: 24px;
+}
+
+.rightBlock {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.titleBlock {
+    display: flex;
+    flex-direction: column;
+}
+
+.pageTitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.counter {
+    font-size: 16px;
+    color: #666;
+}
+
+.actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.addButton,
+.rolesButton,
+.exportButton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid #0d6efd;
+    background-color: white;
+    color: #0d6efd;
+    transition: 0.2s ease;
+}
+
+.addButton:hover,
+.rolesButton:hover,
+.exportButton:hover {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.icon {
+    font-size: 16px;
+}
+
+
+.filters {
+    width: 240px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.filterGroup {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.filterLabel {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #222;
+    font-size: 14px;
+}
+
+.filterGroup label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+.filterGroup label input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #007aff;
+    cursor: pointer;
+}
+
+.filterGroup label span {
+    font-size: 13px;
+    color: #777;
+    margin-left: 4px;
+}
+
+.clearButton {
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border: 1.5px solid #aaa;
+    border-radius: 20px;
+    font-weight: 500;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.clearButton:hover {
+    background-color: #f0f0f0;
+    border-color: #888;
+}
+
+
+.searchBar {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.searchInput {
+    flex: 1;
+    min-width: 200px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.sortSelect {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.searchButton {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    background-color: #0d6efd;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.searchButton:hover {
+    background-color: #0b5ed7;
+}
+.searchBar {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.searchInput {
+    flex: 1;
+    min-width: 200px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.sortSelect {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.searchButton {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    background-color: #0d6efd;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.searchButton:hover {
+    background-color: #0b5ed7;
+}
+
+
+.tableWrapper {
+    overflow-x: auto;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.staffTable {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.staffTable thead {
+    background-color: #f5f5f5;
+}
+
+.staffTable th,
+.staffTable td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.userCell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatarSmall {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.moreButton {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #666;
+}
+.moreButton:hover {
+    color: #333;
+}
+.noDataText {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+    padding: 20px;
+}
