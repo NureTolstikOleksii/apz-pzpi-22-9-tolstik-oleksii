@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: healthyhelper-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: healthyhelper
+  template:
+    metadata:
+      labels:
+        app: healthyhelper
+    spec:
+      containers:
+        - name: healthyhelper
+          image: healthyhelper-image
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 4200
+          env:
+            - name: PORT
+              value: "4200"
+            - name: DATABASE_URL
+              value: "postgresql://postgres:123456@postgres:5432/healthyHelperDB"
